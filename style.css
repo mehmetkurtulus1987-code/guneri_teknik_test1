@@ -417,18 +417,26 @@ header {
 
 /* Hemen Ara Butonu */
 .call-btn {
-    background-color: #e41e26;
+    background: #e41e26 !important; 
     color: #fff !important;
     padding: 15px 40px;
     font-size: 1.1rem;
-    border-radius: 50px; /* Daha dikkat çekici oval yapı */
+    font-weight: 800;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 4px 15px rgba(228, 30, 38, 0.4);
+    transition: all 0.3s ease;
+    border: none;
     width: fit-content;
 }
 
 .call-btn:hover {
-    background-color: #333;
-    transform: scale(1.05);
+    transform: scale(1.05); 
+    background-color: #333 !important; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 /* ==========================================================================
@@ -1645,5 +1653,5 @@ body.page-yedekparca {
 .brand-links-grid {grid-template-columns: repeat(2, 1fr); gap: 8px; }
 .brand-links-grid a:last-child:nth-child(odd) {grid-column: span 2; }
 .support-action {width: 100%;justify-content: center;}
-.call-btn {width: 100%;margin-top: 10px;padding: 12px; }
+.call-btn { width: 100%; }
 }
