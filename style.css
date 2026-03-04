@@ -351,28 +351,47 @@ header {
     gap: 20px;
 }
 .support-text h3 {
-    font-size: 1.8rem;
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #e41e26;
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
 }
 .support-text p {
-    color: #555;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0;
 }
 .support-link {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 6px; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.support-action {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+/* Hemen Ara Butonu (Canlı Kırmızı) */
+.call-btn {
     background-color: #e41e26;
     color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
+    box-shadow: 0 4px 10px rgba(228, 30, 38, 0.3);
 }
 .support-link:hover {
-    background-color: #333;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    filter: brightness(1.1);
 }
+
 /* ==========================================================================
    4. HAKKIMIZDA ÖZEL
    ========================================================================== */
@@ -1582,7 +1601,8 @@ body.page-yedekparca {
 .error-title { font-size: 1.1rem; }
 .cta-section { padding: 30px 15px; }
 .cta-btn { width: 100%; box-sizing: border-box; } 
-   .support-container { text-align: center; justify-content: center; }
-    .support-text h3 { font-size: 1.5rem; }
-    .support-link { width: 100%; }
+.support-container { flex-direction: column; text-align: center; gap: 20px; }
+.support-text h3 { font-size: 1.5rem; }
+.support-link { flex: 1; max-width: 160px; font-size: 0.8rem; }
+.support-action {width: 100%;justify-content: center;}
 }
