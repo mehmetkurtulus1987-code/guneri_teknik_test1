@@ -1285,22 +1285,22 @@ body.page-yedekparca {
 }
 /*servis not kısmı */
 .service-notice {
-    text-align: center;      /* Metni yatayda ortalar */
-    padding: 30px 20px;      /* Üstten ve alttan boşluk bırakır */
-    background-color: #fff;  /* Arka plan rengi (isteğe göre #f9f9f9 olabilir) */
-    max-width: 900px;        /* Metnin çok fazla yayılmasını engeller */
-    margin: 0 auto;          /* Bloğu sayfanın ortasına hizalar */
+    text-align: center;      
+    padding: 30px 20px;      
+    background-color: #fff;  
+    max-width: 900px;        
+    margin: 0 auto;          
 }
 
 .service-notice p {
-    font-size: 1.2rem;       /* Yazıyı biraz büyütür, daha okunabilir yapar */
-    line-height: 1.6;        /* Satır aralığını açar */
-    color: #333;             /* Yazı rengini yumuşatır */
+    font-size: 1.2rem;       
+    line-height: 1.6;        
+    color: #333;             
     margin: 0;
 }
 
 .service-notice strong {
-    color: #e41e26;          /* Şehir isimlerini kırmızı (veya marka rengin) yaparak vurgular */
+    color: #e41e26;          
 }
 
 /* Harita Alanı */
@@ -1330,32 +1330,59 @@ body.page-yedekparca {
 .footer-flex-alt {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 30px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.footer-kvkk-zone, .footer-hizmetler, .footer-info {
+/* Sütunların genişlik ayarları */
+.footer-kvkk-zone, 
+.footer-hizmetler, 
+.footer-regions, 
+.footer-info {
     flex: 1;
-    min-width: 250px;
+    min-width: 220px; 
 }
 
 .site-footer h4 {
     color: #f0610e;
     margin-bottom: 20px;
     font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .site-footer ul {
     list-style: none;
+    padding: 0;
 }
 
-    .site-footer ul li, .site-footer p {
-        font-size: 0.95rem;
-        margin-bottom: 10px;
-        opacity: 0.9;
-    }
-/* KVKK Buton Stili (Link gibi görünen buton) */
+.site-footer ul li, 
+.site-footer p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Bölge ve Hizmet Linkleri İçin Stil */
+.site-footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.site-footer ul li a:hover {
+    color: #f0610e;
+    padding-left: 5px; 
+}
+
+/* KVKK Buton Stili */
 .footer-link-btn {
     background: none;
     border: none;
@@ -1369,16 +1396,17 @@ body.page-yedekparca {
     font-family: inherit;
 }
 
-    .footer-link-btn:hover {
-        color: #f0610e;
-    }
+.footer-link-btn:hover {
+    color: #f0610e;
+}
 
+/* Alt Bilgi ve Telif Alanı */
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.1);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 /* ==========================================================================
    9. MODERN DIALOG MODAL 
@@ -1527,7 +1555,146 @@ body.page-yedekparca {
 }
 
 /* ==========================================================================
-   12. MOBİL UYUMLULUK
+   12. LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA)
+   ========================================================================== */
+.page-location-aliaga {
+    background-color: #fdfdfd;
+}
+
+.location-page {
+    padding-top: 120px; 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+/* Hero Bölümü: Deniz Manzaralı Arkaplan */
+.location-hero {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('/img/deniz-manzara.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 20px; 
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 20px 40px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.location-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+}
+
+.location-hero p {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Özellik Kartları (3'lü Yapı) */
+.location-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 20px 50px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #b0c4de; 
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    color: #e41e26;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Metin İçeriği ve Mahalle Listesi */
+.location-text-content {
+    background: #fff;
+    padding: 45px;
+    margin: 0 20px;
+    border-radius: 12px;
+    line-height: 1.8;
+    color: #444;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.location-text-content h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-left: 6px solid #e41e26;
+    padding-left: 20px;
+}
+
+/* Mahalleler Alanı */
+.neighborhoods {
+    margin-top: 35px;
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #eef2f6;
+}
+
+.neighborhoods h4 {
+    margin-bottom: 20px;
+    color: #1a2a6c;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.neighborhoods ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.neighborhoods ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.neighborhoods ul li::before {
+    content: "📍";
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+
+/* ==========================================================================
+   13. MOBİL UYUMLULUK
    ========================================================================== */
 @media (max-width: 768px) {
    page-home .hero {
@@ -1615,8 +1782,32 @@ body.page-yedekparca {
     #menu-bar:checked ~ .menu-overlay {
         display: block; /* Dışarı tıklama katmanını aç */
     }
+   /* 6. LOKAL HİZMET SAYFALARI */
+   .location-hero {
+        padding: 60px 15px;
+        margin: 0 10px 30px;
+    }
 
-    /* 6. Diğer Mobil Düzeltmeler */
+    .location-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .location-features {
+        grid-template-columns: 1fr; /* Mobilde kartlar alt alta */
+        gap: 15px;
+    }
+
+    .neighborhoods ul {
+        grid-template-columns: 1fr; /* Mobilde mahalleler tek sütun */
+    }
+
+    .location-text-content {
+        padding: 25px;
+        margin: 0 10px;
+    }
+}
+
+    /* 7. Diğer Mobil Düzeltmeler */
     .site-logo { height: 40px; }
     .brand-logos {padding: 5px 0 !important; gap: 7px !important;}
     .brand-logos img {height: 16px !important; width: auto; margin: 5px;}
@@ -1654,4 +1845,8 @@ body.page-yedekparca {
 .brand-links-grid a:last-child:nth-child(odd) {grid-column: span 2; }
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
+   /* footer alanı */
+.footer-flex-alt {flex-direction: column; text-align: center;}
+.site-footer h4::after { content: "";display: block;width: 40px;height: 2px;background: #f0610e;margin: 10px auto; }
+.footer-link-btn { margin-bottom: 20px;}
 }
