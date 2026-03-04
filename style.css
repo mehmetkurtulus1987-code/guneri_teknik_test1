@@ -1572,14 +1572,14 @@ body.page-yedekparca {
 
 /* Hero Bölümü: Deniz Manzaralı Arkaplan */
 .location-hero {
-    /* Resim ana dizinde olduğu için ../img/ kullanarak klasörden dışarı çıktık */
+    
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../img/deniz-manzara.webp'); 
+                url('img/deniz-manzara.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    padding: 100px 20px; /* İçeriği biraz daha genişlettik */
+    padding: 100px 20px; 
     text-align: center;
     border-radius: 15px;
     margin: 0 20px 40px 20px;
@@ -1591,7 +1591,7 @@ body.page-yedekparca {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 800;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Resim üzerinde okunabilirlik için */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
 }
 
 .location-hero p {
