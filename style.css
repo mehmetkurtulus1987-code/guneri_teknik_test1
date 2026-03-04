@@ -1330,32 +1330,59 @@ body.page-yedekparca {
 .footer-flex-alt {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 30px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.footer-kvkk-zone, .footer-hizmetler, .footer-info {
+/* Sütunların genişlik ayarları */
+.footer-kvkk-zone, 
+.footer-hizmetler, 
+.footer-regions, 
+.footer-info {
     flex: 1;
-    min-width: 250px;
+    min-width: 220px; 
 }
 
 .site-footer h4 {
     color: #f0610e;
     margin-bottom: 20px;
     font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .site-footer ul {
     list-style: none;
+    padding: 0;
 }
 
-    .site-footer ul li, .site-footer p {
-        font-size: 0.95rem;
-        margin-bottom: 10px;
-        opacity: 0.9;
-    }
-/* KVKK Buton Stili (Link gibi görünen buton) */
+.site-footer ul li, 
+.site-footer p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Bölge ve Hizmet Linkleri İçin Stil */
+.site-footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.site-footer ul li a:hover {
+    color: #f0610e;
+    padding-left: 5px; 
+}
+
+/* KVKK Buton Stili */
 .footer-link-btn {
     background: none;
     border: none;
@@ -1369,16 +1396,17 @@ body.page-yedekparca {
     font-family: inherit;
 }
 
-    .footer-link-btn:hover {
-        color: #f0610e;
-    }
+.footer-link-btn:hover {
+    color: #f0610e;
+}
 
+/* Alt Bilgi ve Telif Alanı */
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.1);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 /* ==========================================================================
    9. MODERN DIALOG MODAL 
@@ -1786,4 +1814,8 @@ body.page-yedekparca {
 .brand-links-grid a:last-child:nth-child(odd) {grid-column: span 2; }
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
+   /* footer alanı */
+.footer-flex-alt {flex-direction: column; text-align: center;}
+.site-footer h4::after { content: "";display: block;width: 40px;height: 2px;background: #f0610e;margin: 10px auto; }
+.footer-link-btn { margin-bottom: 20px;}
 }
