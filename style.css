@@ -1381,7 +1381,48 @@ body.page-yedekparca {
     background-color: #fdedec;
 }
 /* ==========================================================================
-   11. MOBİL UYUMLULUK
+   11. SANICA HATA KODLARI(GENEL YAPI)
+   ========================================================================== */
+.error-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.error-header { text-align: center; margin-bottom: 40px; }
+.error-header h1 { color: #e41e26; font-size: 2.2rem; margin-bottom: 10px; }
+.error-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+.error-card:hover { transform: translateY(-5px); border-left: 6px solid #e41e26; }
+.error-code { color: #e41e26; font-weight: bold; font-size: 1.5rem; display: block; }
+.error-title { font-weight: 700; font-size: 1.25rem; color: #222; display: block; margin: 8px 0; }
+.solution-box {
+    background: #fffafa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #e41e26;
+    line-height: 1.6;
+}
+.cta-section { background: #1a1a1a; color: #ffffff; padding: 45px 25px; border-radius: 15px; text-align: center; }
+.cta-btn {
+    display: inline-block;
+    background: #e41e26;
+    color: #ffffff;
+    padding: 16px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+/* ==========================================================================
+   12. MOBİL UYUMLULUK
    ========================================================================== */
 @media (max-width: 768px) {
    page-home .hero {
@@ -1494,4 +1535,11 @@ body.page-yedekparca {
     .contact-main { padding-top: 80px; }
     input, select, textarea { font-size: 16px !important; /* iOS'ta otomatik zoom'u engeller */ padding: 12px; }
     .warranty-info-box { padding: 15px; }
+   .error-header h1 { font-size: 1.6rem; } 
+.error-container { margin: 20px auto; padding: 15px; }
+.error-card { padding: 18px; }
+.error-code { font-size: 1.2rem; }
+.error-title { font-size: 1.1rem; }
+.cta-section { padding: 30px 15px; }
+.cta-btn { width: 100%; box-sizing: border-box; } 
 }
