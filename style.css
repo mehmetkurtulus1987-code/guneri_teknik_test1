@@ -399,13 +399,20 @@ header {
     background-color: #fff;
     color: #333;
     border: 1px solid #ddd;
+   position: relative;
+    overflow: hidden;
+   z-index: 1;
+   background: linear-gradient(to right, #b0c4de 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out, color 0.3s ease;
 }
 
 .support-link:hover {
-    border-color: #e41e26;
-    color: #e41e26;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #000; 
+    border-color: #b0c4de;
+    background-position: left bottom; 
+    box-shadow: none; 
 }
 
 /* Hemen Ara Butonu */
