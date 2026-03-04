@@ -334,6 +334,45 @@ header {
         opacity: 1;
         transform: rotate(45deg); /* Hafif bir dönüş efekti */
     }
+/* Hızlı Çözüm Bloğu CSS */
+.quick-support {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    border-top: 3px solid #e41e26;
+    margin: 40px 0;
+}
+.support-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.support-text h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+.support-text p {
+    color: #555;
+    font-size: 1.1rem;
+}
+.support-link {
+    background-color: #e41e26;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+.support-link:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
 /* ==========================================================================
    4. HAKKIMIZDA ÖZEL
    ========================================================================== */
@@ -1542,4 +1581,7 @@ body.page-yedekparca {
 .error-title { font-size: 1.1rem; }
 .cta-section { padding: 30px 15px; }
 .cta-btn { width: 100%; box-sizing: border-box; } 
+   .support-container { text-align: center; justify-content: center; }
+    .support-text h3 { font-size: 1.5rem; }
+    .support-link { width: 100%; }
 }
