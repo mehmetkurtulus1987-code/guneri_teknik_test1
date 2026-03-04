@@ -1527,7 +1527,123 @@ body.page-yedekparca {
 }
 
 /* ==========================================================================
-   12. MOBİL UYUMLULUK
+   12. LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA)
+   ========================================================================== */
+.page-location-aliaga {
+    background-color: #fdfdfd;
+}
+
+.location-page {
+    padding-top: 120px; /* Header altında kalmaması için */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.location-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/aliaga-servis-bg.jpg'); /* Varsa bir görsel koyabilirsin */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 20px 40px 20px;
+}
+
+.location-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.location-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.location-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 20px 50px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #b0c4de; 
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    color: #e41e26;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.location-text-content {
+    background: #fff;
+    padding: 40px;
+    margin: 0 20px;
+    border-radius: 12px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.location-text-content h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 5px solid #e41e26;
+    padding-left: 15px;
+}
+
+.neighborhoods {
+    margin-top: 30px;
+    background: #f4f7f9;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.neighborhoods h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.neighborhoods ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+}
+
+.neighborhoods ul li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.neighborhoods ul li::before {
+    content: "📍";
+    margin-right: 8px;
+}
+
+/* ==========================================================================
+   13. MOBİL UYUMLULUK
    ========================================================================== */
 @media (max-width: 768px) {
    page-home .hero {
@@ -1615,8 +1731,24 @@ body.page-yedekparca {
     #menu-bar:checked ~ .menu-overlay {
         display: block; /* Dışarı tıklama katmanını aç */
     }
+   /* 6. LOKAL HİZMET SAYFALARI */
+   .location-page { padding-top: 100px; }
+    
+    .location-hero h1 { font-size: 1.8rem; }
+    
+    .location-features {
+        grid-template-columns: 1fr; /* Mobilde kartlar alt alta */
+    }
+    
+    .neighborhoods ul {
+        grid-template-columns: 1fr; /* Mobilde mahalleler tek sütun */
+    }
+    
+    .location-text-content {
+        padding: 20px;
+    }
 
-    /* 6. Diğer Mobil Düzeltmeler */
+    /* 7. Diğer Mobil Düzeltmeler */
     .site-logo { height: 40px; }
     .brand-logos {padding: 5px 0 !important; gap: 7px !important;}
     .brand-logos img {height: 16px !important; width: auto; margin: 5px;}
