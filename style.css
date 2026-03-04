@@ -1557,14 +1557,12 @@ body.page-yedekparca {
 /* ==========================================================================
    12. LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA)
    ========================================================================== */
-/* --- LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA) --- */
-
 .page-location-aliaga {
     background-color: #fdfdfd;
 }
 
 .location-page {
-    padding-top: 120px; /* Header altında kalmaması için */
+    padding-top: 120px; 
     max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 60px;
@@ -1574,7 +1572,7 @@ body.page-yedekparca {
 .location-hero {
     
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('img/deniz-manzara.webp'); 
+                url('/img/deniz-manzara.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
