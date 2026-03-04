@@ -1427,7 +1427,7 @@ body.page-yedekparca {
     margin: 0px auto;
     padding: 100px 20px 40px 20px;
 }
-.error-header { text-align: center; margin-bottom: 40px; }
+.error-header { text-align: center; margin-top: 60px; margin-bottom: 40px; }
 .error-header h1 { color: #e41e26; font-size: 2.2rem; margin-bottom: 10px; }
 .error-card {
     background: #ffffff;
