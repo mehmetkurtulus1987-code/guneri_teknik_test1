@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombi Yedek Parça | Sanica, Maktek, Dizayn, Hexel, Ariston Orijinal Parçalar</title>
+    <meta name="description" content="Sanica, Maktek ve Ariston orijinal kombi yedek parçaları. Anakart, fan, pompa ve çok daha fazlası uygun fiyatlarla Güneri Teknik'te.">
+    <link rel="icon" type="image/png" href="/img/Logo/guneri-teknik-logo.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-yedekparca">
+
+    <header>
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <img src="/img/Logo/guneri-teknik-logo.png" alt="Güneri Teknik Logo" class="site-logo">
+                <h1>GÜNERİ <span>TEKNİK</span></h1>
+            </a>
+
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="hamburger-icon">☰</label>
+            <label for="menu-bar" class="menu-overlay"></label>
+
+            <ul class="menu">
+                <li><a href="/">Anasayfa</a></li>
+                <li><a href="/hakkimizda">Hakkımızda</a></li>
+                <li><a href="/urunlerimiz">Ürünlerimiz</a></li>
+                <li><a href="/yedekparca">Yedek Parça</a></li>
+                <li><a href="/iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-yedekparca">
+        <div class="part-hero">
+            <div class="container">
+                <h1>ORİJİNAL YEDEK PARÇA</h1>
+                <p>Maktek, Sanica, Dizayn, Hexel ve Ariston kombiler için orijinal yedek parça/montaj hizmeti. Ayrıca katı yakıtlı kazanlarınız için de parça/montaj desteği</p>
+                <p>Sistemleriniz için %100 orijinal ve garantili parça desteği.</p>
+            </div>
+        </div>
+        <div class="search-section">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="partSearch" placeholder="Parça adı veya model yazın..." onkeyup="searchParts()">
+                    <span id="clearSearch" onclick="clearInput()">×</span>
+                    <button type="button" class="search-btn">🔍</button>
+                </div>
+            </div>
+        </div>
+                    <p class="search-hint">
+                        Aradığınız parçayı bulamazsanız lütfen 
+                        <a href="https://wa.me/905376183344?text=Merhaba,%20sitenizden%20ulaşıyorum.%20Şu%20yedek%20parça%20stokta%20mı:" target="_blank" class="whatsapp-link"> teknik destek hattımızla</a> 
+                        iletişime geçin.</p>
+            
+            <div class="filter-group">
+                <button class="filter-btn active" onclick="filterCategory('all')">Tümü</button>
+                <button class="filter-btn" onclick="filterCategory('sensor')">Sensörler</button>
+                <button class="filter-btn" onclick="filterCategory('motor')">Vana Motorları</button>
+                <button class="filter-btn" onclick="filterCategory('atesleme')">Ateşleme & Fan Grubu</button>
+                <button class="filter-btn" onclick="filterCategory('sugrubu')">Su Grubu & Pompa</button>
+                <button class="filter-btn" onclick="filterCategory('tamir')">Tamir Takımları</button>
+            </div>
+            <div class="container parts-wrapper">
+                <section class="part-category" id="cat-motor">
+                    <h2 class="interactive-title">Vana Motorları</h2>
+                    <div class="parts-grid"></div>
+                </section>
+
+                <section class="part-category" id="cat-sugrubu">
+                    <h2 class="interactive-title">Su Grubu & Pompa</h2>
+                    <div class="parts-grid"></div>
+                </section>
+
+                <section class="part-category" id="cat-atesleme">
+                    <h2 class="interactive-title">Ateşleme & Fan Grubu</h2>
+                    <div class="parts-grid"></div>
+                </section>
+
+                <section class="part-category" id="cat-sensor">
+                    <h2 class="interactive-title">Sensör & Ölçüm Grubu</h2>
+                    <div class="parts-grid"></div>
+                </section>
+
+                <section class="part-category" id="cat-tamir">
+                    <h2 class="interactive-title">Tamir Takımları</h2>
+                    <div class="parts-grid"></div>
+                </section>
+            </div>
+</main>
+    <div class="seo-text" style="display:none;">
+    <h2>İzmir Menemen Kombi Yedek Parça Stokları</h2>
+    <p>Sanica, Maktek, Hexel, Dizayn ve Ariston markalarının orijinal kombi parçaları: 
+    Eşanjörler, devirdaim pompaları, anakartlar, fan motorları ve genleşme tankları. 
+    Güneri Teknik güvencesiyle hızlı teslimat ve montaj desteği.</p>
+</div>
+    <script src="/wwwroot/js/site.js"></script>
+    <div id="imageModal" class="img-lightbox" onclick="closeLightbox(event)">
+    <span class="close-lightbox" onclick="closeLightbox(event)">&times;</span>
+    <img class="lightbox-content" id="imgFull">
+    <div id="caption"></div>
+</div>
+
+</body>
+</html>

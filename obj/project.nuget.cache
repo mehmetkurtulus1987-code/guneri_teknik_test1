@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "CG5GqxkhZUI=",
+  "success": true,
+  "projectFilePath": "D:\\website\\Güneri Teknik\\yeniweb sitem\\yeniweb sitem.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Metehan\\.nuget\\packages\\fsharp.core\\10.0.102\\fsharp.core.10.0.102.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\10.0.2\\microsoft.aspnetcore.mvc.razor.runtimecompilation.10.0.2.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.0\\microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.0\\microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.0\\microsoft.codeanalysis.razor.6.0.0.nupkg.sha512",
+    "C:\\Users\\Metehan\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.2\\microsoft.extensions.dependencymodel.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

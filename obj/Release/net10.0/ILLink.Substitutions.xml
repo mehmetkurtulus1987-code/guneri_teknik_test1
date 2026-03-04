@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="yeniweb sitem">
+    <resource name="FSharpSignatureData.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpOptimizationData.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.yeniweb sitem" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.yeniweb sitem" action="remove"></resource>
+  </assembly>
+</linker>
