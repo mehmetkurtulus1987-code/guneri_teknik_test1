@@ -1285,22 +1285,22 @@ body.page-yedekparca {
 }
 /*servis not kısmı */
 .service-notice {
-    text-align: center;      /* Metni yatayda ortalar */
-    padding: 30px 20px;      /* Üstten ve alttan boşluk bırakır */
-    background-color: #fff;  /* Arka plan rengi (isteğe göre #f9f9f9 olabilir) */
-    max-width: 900px;        /* Metnin çok fazla yayılmasını engeller */
-    margin: 0 auto;          /* Bloğu sayfanın ortasına hizalar */
+    text-align: center;      
+    padding: 30px 20px;      
+    background-color: #fff;  
+    max-width: 900px;        
+    margin: 0 auto;          
 }
 
 .service-notice p {
-    font-size: 1.2rem;       /* Yazıyı biraz büyütür, daha okunabilir yapar */
-    line-height: 1.6;        /* Satır aralığını açar */
-    color: #333;             /* Yazı rengini yumuşatır */
+    font-size: 1.2rem;       
+    line-height: 1.6;        
+    color: #333;             
     margin: 0;
 }
 
 .service-notice strong {
-    color: #e41e26;          /* Şehir isimlerini kırmızı (veya marka rengin) yaparak vurgular */
+    color: #e41e26;          
 }
 
 /* Harita Alanı */
@@ -1557,6 +1557,8 @@ body.page-yedekparca {
 /* ==========================================================================
    12. LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA)
    ========================================================================== */
+/* --- LOKAL HİZMET SAYFALARI (ALİAĞA & FOÇA) --- */
+
 .page-location-aliaga {
     background-color: #fdfdfd;
 }
@@ -1568,30 +1570,39 @@ body.page-yedekparca {
     padding-bottom: 60px;
 }
 
+/* Hero Bölümü: Deniz Manzaralı Arkaplan */
 .location-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/aliaga-servis-bg.jpg'); /* Varsa bir görsel koyabilirsin */
+    /* Resim ana dizinde olduğu için ../img/ kullanarak klasörden dışarı çıktık */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../img/deniz-manzara.webp'); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px; /* İçeriği biraz daha genişlettik */
     text-align: center;
     border-radius: 15px;
     margin: 0 20px 40px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .location-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Resim üzerinde okunabilirlik için */
 }
 
 .location-hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
+    font-size: 1.25rem;
+    max-width: 750px;
     margin: 0 auto 30px;
     line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+/* Özellik Kartları (3'lü Yapı) */
 .location-features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1601,22 +1612,24 @@ body.page-yedekparca {
 
 .feature-card {
     background: #fff;
-    padding: 30px 20px;
+    padding: 35px 25px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border-bottom: 4px solid #b0c4de; 
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .feature-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #e41e26;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .feature-card p {
@@ -1625,32 +1638,39 @@ body.page-yedekparca {
     line-height: 1.5;
 }
 
+/* Metin İçeriği ve Mahalle Listesi */
 .location-text-content {
     background: #fff;
-    padding: 40px;
+    padding: 45px;
     margin: 0 20px;
     border-radius: 12px;
     line-height: 1.8;
     color: #444;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
 }
 
 .location-text-content h2 {
     color: #333;
-    margin-bottom: 20px;
-    border-left: 5px solid #e41e26;
-    padding-left: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-left: 6px solid #e41e26;
+    padding-left: 20px;
 }
 
+/* Mahalleler Alanı */
 .neighborhoods {
-    margin-top: 30px;
-    background: #f4f7f9;
-    padding: 25px;
-    border-radius: 8px;
+    margin-top: 35px;
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #eef2f6;
 }
 
 .neighborhoods h4 {
-    margin-bottom: 15px;
-    color: #2c3e50;
+    margin-bottom: 20px;
+    color: #1a2a6c;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 .neighborhoods ul {
@@ -1658,17 +1678,22 @@ body.page-yedekparca {
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding: 0;
+    gap: 10px;
 }
 
 .neighborhoods ul li {
-    padding: 5px 0;
-    font-size: 0.9rem;
+    padding: 8px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
 }
 
 .neighborhoods ul li::before {
     content: "📍";
-    margin-right: 8px;
+    margin-right: 10px;
+    font-size: 1rem;
 }
+
 
 /* ==========================================================================
    13. MOBİL UYUMLULUK
@@ -1760,21 +1785,29 @@ body.page-yedekparca {
         display: block; /* Dışarı tıklama katmanını aç */
     }
    /* 6. LOKAL HİZMET SAYFALARI */
-   .location-page { padding-top: 100px; }
-    
-    .location-hero h1 { font-size: 1.8rem; }
-    
+   .location-hero {
+        padding: 60px 15px;
+        margin: 0 10px 30px;
+    }
+
+    .location-hero h1 {
+        font-size: 1.8rem;
+    }
+
     .location-features {
         grid-template-columns: 1fr; /* Mobilde kartlar alt alta */
+        gap: 15px;
     }
-    
+
     .neighborhoods ul {
         grid-template-columns: 1fr; /* Mobilde mahalleler tek sütun */
     }
-    
+
     .location-text-content {
-        padding: 20px;
+        padding: 25px;
+        margin: 0 10px;
     }
+}
 
     /* 7. Diğer Mobil Düzeltmeler */
     .site-logo { height: 40px; }
