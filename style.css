@@ -163,8 +163,8 @@ header {
 /* ==========================================================================
    3. ANASAYFA ÖZEL (page-home)
    ========================================================================== */
-.page-home .hero {
-    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7) ), url('https://image2url.com/r2/default/images/1770467499425-daf2095f-12c4-4add-a35a-f3b998b96870.jpg');
+.page-home main {
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7) ), url('manzara-1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -429,6 +429,12 @@ header {
     transform: scale(1.05); 
     background-color: #333 !important; 
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.tercih, .brands, .quick-support {
+    background-color: transparent !important;
+}
+section {
+    padding: 60px 0; /* Bölümlerin alt ve üstünden nefes aldırır */
 }
 
 /* ==========================================================================
