@@ -238,8 +238,8 @@ header {
 }
 .tercih-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 100px 30px; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 100px 15px; 
     margin-top: 40px;
 }
 .tercih-card {
@@ -283,7 +283,7 @@ header {
         top: 175px; 
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
+        width: 160px;
     }
 
         .tercih-card .card-content h3 {
