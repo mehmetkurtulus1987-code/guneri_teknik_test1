@@ -1329,34 +1329,32 @@ body.page-yedekparca {
 
 .footer-flex-alt {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-bottom: 30px;
-    max-width: 1200px; 
+    flex-direction: row; /* Yan yana olmasını garantiler */
+    justify-content: space-between; /* Araları eşit açar */
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Masaüstünde zorla yan yana tutar */
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
-/* Sütunların genişlik ayarları */
+/* Her bir sütunun genişliğini %25 civarına sabitleyelim */
 .footer-kvkk-zone, 
 .footer-hizmetler, 
 .footer-regions, 
 .footer-info {
-    flex: 1;
-    min-width: 220px; 
+    flex: 1; /* Hepsi eşit alan kaplasın */
+    min-width: 0; /* Flexbox'un içeriğe göre genişlemesini engeller */
 }
 
 .site-footer h4 {
     color: #f0610e;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Sütunlar sığsın diye biraz küçülttük */
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    white-space: nowrap; /* Başlıkların kırılmasını önler */
 }
-
 .site-footer ul {
     list-style: none;
     padding: 0;
@@ -1846,7 +1844,13 @@ body.page-yedekparca {
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
    /* footer alanı */
-.footer-flex-alt {flex-direction: column; text-align: center;}
-.site-footer h4::after { content: "";display: block;width: 40px;height: 2px;background: #f0610e;margin: 10px auto; }
-.footer-link-btn { margin-bottom: 20px;}
+/* MOBİLDE TEKRAR ALT ALTA DÜŞMESİ İÇİN */
+@media (max-width: 992px) {
+    .footer-flex-alt {  flex-wrap: wrap; justify-content: center; text-align: center;  }
+    .footer-kvkk-zone, .footer-hizmetler, .footer-regions, .footer-info {
+       flex: 0 0 45%; min-width: 250px; margin-bottom: 30px; }
+}
+
+@media (max-width: 600px) {
+    .footer-kvkk-zone, .footer-hizmetler, .footer-regions, .footer-info {flex: 0 0 100%; }
 }
