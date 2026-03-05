@@ -240,7 +240,7 @@ header {
 /* Grid Yapısını Dairelere Göre Düzenleme */
 .tercih-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 100px 30px; 
     margin-top: 40px;
 }
@@ -248,8 +248,8 @@ header {
 /* Ana Daire Kartı */
 .tercih-card {
     background: #fff;
-    width: 90px;
-    height: 90px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -289,7 +289,7 @@ header {
     /* Alt kısımdaki yazılar (Dairenin dışında) */
     .tercih-card .card-content {
         position: absolute;
-        top: 175px; 
+        top: 175px; /* Dairenin bitişinden sonra başlar */
         left: 50%;
         transform: translateX(-50%);
         width: 200px;
