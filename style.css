@@ -1822,13 +1822,8 @@ body.page-yedekparca {
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
    /* footer alanı */
-/* MOBİLDE TEKRAR ALT ALTA DÜŞMESİ İÇİN */
-@media (max-width: 992px) {
     .footer-flex-alt {  flex-wrap: wrap; justify-content: center; text-align: center;  }
     .footer-kvkk-zone, .footer-hizmetler, .footer-regions, .footer-info {
        flex: 0 0 45%; min-width: 250px; margin-bottom: 30px; }
 }
 
-@media (max-width: 600px) {
-    .footer-kvkk-zone, .footer-hizmetler, .footer-regions, .footer-info {flex: 0 0 100%; }
-}
