@@ -1680,6 +1680,58 @@ body.page-yedekparca {
     margin-right: 10px;
     font-size: 1rem;
 }
+.kilavuz-box {
+    margin-top: 40px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e6ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.kilavuz-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.kilavuz-icon {
+    font-size: 2.5rem;
+    color: #e41e26; /* Kırmızı PDF ikonu */
+}
+
+.kilavuz-text h4 {
+    color: #1a2a6c;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.kilavuz-text p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.kilavuz-download-btn {
+    background-color: #1a2a6c;
+    color: #fff !important;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.kilavuz-download-btn:hover {
+    background-color: #e41e26;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(228, 30, 38, 0.3);
+}
 
 
 /* ==========================================================================
@@ -1833,6 +1885,8 @@ body.page-yedekparca {
 .brand-links-grid a:last-child:nth-child(odd) {grid-column: span 2; }
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
+.kilavuz-box {flex-direction: column;text-align: center; gap: 20px; }
+.kilavuz-content {flex-direction: column; gap: 10px; }
 
 }
 
