@@ -1682,49 +1682,67 @@ body.page-yedekparca {
 }
 /* Ana kutuyu dikey hizaya hazırla */
 .kilavuz-box {
-    display: flex;
-    flex-direction: column; /* İçerikleri alt alta dizer */
-    gap: 20px;
-    padding: 25px;
+    margin-top: 40px;
+    padding: 30px;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 15px;
     border: 1px solid #e0e6ed;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center; /* Başlığı ve metni ortalar */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* Linklerin olduğu alanı düzenle */
+.kilavuz-header {
+    margin-bottom: 25px;
+}
+
+.kilavuz-icon {
+    font-size: 2.5rem;
+    color: #e41e26;
+    margin-bottom: 10px;
+}
+
+.kilavuz-text h4 {
+    color: #1a2a6c;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.kilavuz-text p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto; /* Paragrafı ortalar */
+}
+
+/* Buton Konteynırı */
 .kilavuz-links {
     display: flex;
-    flex-direction: column; 
-    gap: 10px; 
+    flex-wrap: wrap; /* Sığmazsa aşağı atar */
+    justify-content: center; /* Butonları ortalar */
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .kilavuz-download-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    background-color: #f8f9fa; 
-    color: #1a2a6c !important; 
-    padding: 12px 18px;
-    border-radius: 8px;
+    background-color: #f1f4f8;
+    color: #1a2a6c !important;
+    padding: 10px 18px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Biraz küçülttük */
     transition: all 0.3s ease;
-    border: 1px solid #dee2e6;
-}
-
-.kilavuz-download-btn i {
-    margin-right: 12px;
-    color: #e41e26; 
-    font-size: 1.1rem;
+    border: 1px solid #dce2e9;
+    white-space: nowrap; /* Yazıların kırılmasını engeller */
 }
 
 .kilavuz-download-btn:hover {
-    background-color: #1a2a6c; 
-    color: #ffffff !important;
-    transform: translateX(5px); 
+    background-color: #e41e26;
+    color: #fff !important;
+    border-color: #e41e26;
+    transform: translateY(-3px);
 }
-
 
 /* ==========================================================================
    13. MOBİL UYUMLULUK
