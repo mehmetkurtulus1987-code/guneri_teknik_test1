@@ -1680,57 +1680,49 @@ body.page-yedekparca {
     margin-right: 10px;
     font-size: 1rem;
 }
+/* Ana kutuyu dikey hizaya hazırla */
 .kilavuz-box {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column; /* İçerikleri alt alta dizer */
+    gap: 20px;
     padding: 25px;
     background: #ffffff;
     border-radius: 12px;
     border: 1px solid #e0e6ed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.kilavuz-content {
+/* Linklerin olduğu alanı düzenle */
+.kilavuz-links {
     display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.kilavuz-icon {
-    font-size: 2.5rem;
-    color: #e41e26; /* Kırmızı PDF ikonu */
-}
-
-.kilavuz-text h4 {
-    color: #1a2a6c;
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-}
-
-.kilavuz-text p {
-    color: #666;
-    font-size: 0.9rem;
-    margin: 0;
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .kilavuz-download-btn {
-    background-color: #1a2a6c;
-    color: #fff !important;
-    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; 
+    color: #1a2a6c !important; 
+    padding: 12px 18px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
-    white-space: nowrap;
+    border: 1px solid #dee2e6;
+}
+
+.kilavuz-download-btn i {
+    margin-right: 12px;
+    color: #e41e26; 
+    font-size: 1.1rem;
 }
 
 .kilavuz-download-btn:hover {
-    background-color: #e41e26;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(228, 30, 38, 0.3);
+    background-color: #1a2a6c; 
+    color: #ffffff !important;
+    transform: translateX(5px); 
 }
 
 
