@@ -393,10 +393,10 @@ header {
     background-color: #fff;
     color: #333;
     border: 1px solid #ddd;
-   position: relative;
+    position: relative;
     overflow: hidden;
-   z-index: 1;
-   background: linear-gradient(to right, #b0c4de 50%, #fff 50%);
+    z-index: 1;
+    background: linear-gradient(to right, #b0c4de 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 0.5s ease-out, color 0.3s ease;
@@ -1331,7 +1331,7 @@ body.page-yedekparca {
     padding: 0 20px;
 }
 
-/* Her bir sütunun genişliğini %25 civarına sabitleyelim */
+
 .footer-kvkk-zone, 
 .footer-hizmetler, 
 .footer-regions, 
@@ -1558,7 +1558,6 @@ body.page-yedekparca {
     padding-bottom: 60px;
 }
 
-/* Hero Bölümü: Deniz Manzaralı Arkaplan */
 .location-hero {
     
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
@@ -1835,9 +1834,6 @@ body.page-yedekparca {
 .brand-links-grid a:last-child:nth-child(odd) {grid-column: span 2; }
 .support-action {width: 100%;justify-content: center;}
 .call-btn { width: 100%; }
-   /* footer alanı */
-    .footer-flex-alt {  flex-wrap: wrap; justify-content: center; text-align: center;  }
-    .footer-kvkk-zone, .footer-hizmetler, .footer-regions, .footer-info {
-       flex: 0 0 45%; min-width: 250px; margin-bottom: 30px; }
+
 }
 
