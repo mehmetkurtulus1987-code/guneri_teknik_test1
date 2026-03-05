@@ -235,20 +235,23 @@ header {
     padding: 60px 0 160px 0; /* Alt boşluğu yazıların taşmaması için artırdık */
     background-color: #f8fafd;
     text-align: center;
+    overflow: hidden;
 }
 .tercih-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 120px 20px; 
-    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+    gap: 10px; 
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 60px auto 0 auto;
+    padding: 0 10px;
 }
 .tercih-card {
     background: #fff;
-    width: 150px; 
-    height: 150px;
+    width: 120px; 
+    height: 120px;
+    flex-shrink: 0; 
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -259,7 +262,6 @@ header {
     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     border: 2px solid #eee;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: pointer;
     z-index: 5;
 }
 
@@ -279,21 +281,21 @@ header {
 }
 .tercih-card .card-content {
     position: absolute;
-    top: 165px; 
+    top: 145px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 180px; 
+    width: 150px; 
 }
 .tercih-card .card-content h3 {
     color: #1a2a6c;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-bottom: 5px;
     font-weight: 700;
 }
 .tercih-card .card-content p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #666;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 .tercih-card:hover {
     transform: scale(1.1);
@@ -1790,11 +1792,11 @@ body.page-yedekparca {
     .timeline { margin-left: 0; padding-left: 20px; }
     .timeline-item .year { position: static; display: inline-block; margin-bottom: 10px; }
     .tercih { padding-bottom: 180px; }
-    .tercih-grid { grid-template-columns: 1fr; gap: 150px 0; }
-    .tercih-card { width: 140px; height: 140px; margin: 0 auto; position: relative;}
+    .tercih-grid { flex-direction: column; flex-wrap: wrap; gap: 150px;align-items: center; }
+    .tercih-card { width: 110px; height: 110px; margin: 0 auto; }
     .tercih-card .icon { font-size: 1.8rem; }
     .tercih-card .step-label { font-size: 0.6rem; padding: 2px 8px; bottom: 5px; }
-    .tercih-card .card-content {position: absolute; top: 155px; left: 50%; transform: translateX(-50%); width: 250px; text-align: center;}
+    .tercih-card .card-content {position: absolute; top: 155px; left: 50%; transform: translateX(-50%); width: 250px;}
     .tercih-card .card-content h3 {font-size: 1.1rem; margin-bottom: 8px; white-space: nowrap; }
     .tercih-card .card-content p {font-size: 0.9rem; line-height: 1.4; color: #666; }
     .tercih-card::after {top: -8px; left: -8px; right: -8px; bottom: -8px; }
