@@ -236,18 +236,20 @@ header {
     background-color: #f8fafd;
     text-align: center;
 }
+
+/* Grid Yapısını Dairelere Göre Düzenleme */
 .tercih-grid {
-    display: flex ;
-    flex-wrap: nowrap ; 
-    justify-content: center ;
-    gap: 15px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px 30px; 
     margin-top: 40px;
-    width: 100%;
 }
+
+/* Ana Daire Kartı */
 .tercih-card {
     background: #fff;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -260,13 +262,16 @@ header {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
 }
-.tercih-card .icon {
+
+    /* Kartın İçindeki İkon */
+    .tercih-card .icon {
         font-size: 2.5rem;
         margin-bottom: 5px;
         z-index: 1;
     }
 
-.tercih-card .step-label {
+    /* Lacivert/Siyah Etiket Bandı */
+    .tercih-card .step-label {
         position: absolute;
         bottom: 10px;
         background: #1a2a6c;
@@ -280,12 +285,14 @@ header {
         z-index: 2;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-.tercih-card .card-content {
+
+    /* Alt kısımdaki yazılar (Dairenin dışında) */
+    .tercih-card .card-content {
         position: absolute;
         top: 175px; 
         left: 50%;
         transform: translateX(-50%);
-        width: 160px;
+        width: 200px;
     }
 
         .tercih-card .card-content h3 {
@@ -300,12 +307,16 @@ header {
             color: #666;
             line-height: 1.2;
         }
-.tercih-card:hover {
+
+    /* --- HOVER EFEKTİ (SEÇİLME ANI) --- */
+    .tercih-card:hover {
         transform: scale(1.05);
         border-color: #f0610e;
         box-shadow: 0 15px 45px rgba(240, 97, 14, 0.15);
     }
-.tercih-card::after {
+
+    /* Seçilince Etrafında Dönenv Kesik Çizgili Daire */
+    .tercih-card::after {
         content: '';
         position: absolute;
         top: -10px;
@@ -318,9 +329,10 @@ header {
         transition: 0.4s ease;
         transform: rotate(0deg);
     }
-.tercih-card:hover::after {
+
+    .tercih-card:hover::after {
         opacity: 1;
-        transform: rotate(45deg); 
+        transform: rotate(45deg); /* Hafif bir dönüş efekti */
     }
 /* Hızlı Çözüm Bloğu CSS */
 .quick-support {
