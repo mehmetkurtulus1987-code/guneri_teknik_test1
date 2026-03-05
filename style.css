@@ -187,7 +187,7 @@ header {
     }
 /* --- Marka Logoları --- */
 .brands, .brands-urunlerimiz {
-    background: #ffffff; /* Saf beyaz zemin */
+    background: #ffffff; 
     padding: 5px 0;
     margin-top: 85px;
     position: relative;
@@ -212,14 +212,14 @@ header {
     }
 
         .brand-logos img:hover {
-            transform: translateY(-5px); /* Hafif hareket eklendi */
+            transform: translateY(-5px); 
             opacity: 1;
         }
 
 .brands h2 {
     text-align: center;
     margin-bottom: 35px;
-    color: #1a2a6c !important; /* Koyu lacivert */
+    color: #1a2a6c !important; 
     font-size: 2rem;
     font-weight: 700;
     text-shadow: none;
@@ -227,31 +227,25 @@ header {
     padding-top: 10px;
     background: linear-gradient(90deg, #1a2a6c, #f0610e);
     background-clip: text;
-    -webkit-background-clip: text; /* degrade (renk geçişi)  */
-    -webkit-text-fill-color: transparent; /* Geçişin görünmesi için içini boşaltır */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 /* --- Tercih Kartları --- */
 .tercih {
-    padding: 60px 0 160px 0; /* Alt boşluğu yazıların taşmaması için artırdık */
+    padding: 20px 0 105px 0; 
     background-color: #f8fafd;
     text-align: center;
-    overflow: hidden;
 }
 .tercih-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    flex-wrap: nowrap; 
-    gap: 10px; 
-    max-width: 1200px;
-    margin: 60px auto 0 auto;
-    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px 30px; 
+    margin-top: 40px;
 }
 .tercih-card {
     background: #fff;
-    width: 120px; 
-    height: 120px;
-    flex-shrink: 0; 
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -262,62 +256,70 @@ header {
     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     border: 2px solid #eee;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 5;
+    cursor: pointer;
 }
+.tercih-card .icon {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+        z-index: 1;
+    }
 
 .tercih-card .step-label {
-    position: absolute;
-    bottom: 5px; 
-    background: #1a2a6c;
-    color: #fff;
-    padding: 3px 10px;
-    font-size: 0.65rem;
-    font-weight: bold;
-    border-radius: 4px;
-    transform: rotate(-3deg);
-    white-space: nowrap;
-    z-index: 10;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+        position: absolute;
+        bottom: 10px;
+        background: #1a2a6c;
+        color: #fff;
+        padding: 3px 12px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        border-radius: 4px;
+        transform: rotate(-3deg);
+        white-space: nowrap;
+        z-index: 2;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 .tercih-card .card-content {
-    position: absolute;
-    top: 145px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px; 
-}
-.tercih-card .card-content h3 {
-    color: #1a2a6c;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-.tercih-card .card-content p {
-    font-size: 0.75rem;
-    color: #666;
-    line-height: 1.2;
-}
+        position: absolute;
+        top: 175px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+    }
+
+        .tercih-card .card-content h3 {
+            color: #1a2a6c;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .tercih-card .card-content p {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.2;
+        }
 .tercih-card:hover {
-    transform: scale(1.1);
-    border-color: #f0610e;
-    box-shadow: 0 15px 45px rgba(240, 97, 14, 0.15);
-}
+        transform: scale(1.05);
+        border-color: #f0610e;
+        box-shadow: 0 15px 45px rgba(240, 97, 14, 0.15);
+    }
 .tercih-card::after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 2px dashed #f0610e;
-    border-radius: 50%;
-    opacity: 0;
-    transition: 0.4s ease;
-}
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px dashed #f0610e;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.4s ease;
+        transform: rotate(0deg);
+    }
 .tercih-card:hover::after {
-    opacity: 1;
-    transform: rotate(90deg);
-}
+        opacity: 1;
+        transform: rotate(45deg); 
+    }
 /* Hızlı Çözüm Bloğu CSS */
 .quick-support {
     background-color: #f9f9f9;
