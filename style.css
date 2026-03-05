@@ -1793,12 +1793,12 @@ body.page-yedekparca {
     .contact-grid { grid-template-columns: 1fr; gap: 30px; }
     .timeline { margin-left: 0; padding-left: 20px; }
     .timeline-item .year { position: static; display: inline-block; margin-bottom: 10px; }
-    .tercih { padding-bottom: 180px; }
-    .tercih-grid { flex-direction: column; flex-wrap: wrap; gap: 150px;align-items: center; }
-    .tercih-card { width: 110px; height: 110px; margin: 0 auto; }
+    .tercih { padding: 40px 0 80px 0; }
+    .tercih-grid { display: flex; flex-direction: column; align-items: center; gap: 130px; margin-top: 50px; padding-bottom: 50px; }
+    .tercih-card { width: 140px; height: 140px; margin: 0 auto; position: relative;}
     .tercih-card .icon { font-size: 1.8rem; }
     .tercih-card .step-label { font-size: 0.6rem; padding: 2px 8px; bottom: 5px; }
-    .tercih-card .card-content {position: absolute; top: 155px; left: 50%; transform: translateX(-50%); width: 250px;}
+    .tercih-card .card-content {position: absolute; top: 155px; left: 50%; transform: translateX(-50%); width: 250px; text-align: center;}
     .tercih-card .card-content h3 {font-size: 1.1rem; margin-bottom: 8px; white-space: nowrap; }
     .tercih-card .card-content p {font-size: 0.9rem; line-height: 1.4; color: #666; }
     .tercih-card::after {top: -8px; left: -8px; right: -8px; bottom: -8px; }
