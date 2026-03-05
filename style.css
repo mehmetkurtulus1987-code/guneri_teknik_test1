@@ -430,12 +430,6 @@ header {
     background-color: #333 !important; 
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
-.tercih, .brands, .quick-support {
-    background-color: transparent !important;
-}
-section {
-    padding: 60px 0; /* Bölümlerin alt ve üstünden nefes aldırır */
-}
 
 /* ==========================================================================
    4. HAKKIMIZDA ÖZEL
