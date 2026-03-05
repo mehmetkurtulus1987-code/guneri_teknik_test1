@@ -164,7 +164,7 @@ header {
    3. ANASAYFA ÖZEL (page-home)
    ========================================================================== */
 .page-home .hero {
-    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7) ), url('manzara-1.webp');
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7) ), url('/manzara-1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
