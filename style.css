@@ -1847,7 +1847,38 @@ body.page-yedekparca {
         margin: 0 10px;
     }
 
-    /* 7. Diğer Mobil Düzeltmeler */
+   /* 7.  FOOTER MOBİL  */
+    .footer-flex-alt {
+        flex-direction: column !important; /* Yan yana yerine alt alta */
+        flex-wrap: wrap !important;
+        align-items: center !important; /* Ortala */
+        text-align: center !important;
+        gap: 30px !important; /* Bölümler arasına boşluk */
+    }
+
+    .footer-kvkk-zone, 
+    .footer-hizmetler, 
+    .footer-regions, 
+    .footer-info {
+        width: 100% !important; /* Genişliği tam yap */
+        flex: none !important;
+    }
+
+    .site-footer h4 {
+        white-space: normal !important; /* Uzun başlıklar kırılsın */
+        margin-bottom: 15px;
+    }
+
+    .site-footer ul li {
+        margin-bottom: 10px;
+    }
+
+    .site-footer ul li a {
+        display: inline-block;
+        padding: 5px 0; /* Tıklama alanını genişlet */
+    }
+
+    /* 8. Diğer Mobil Düzeltmeler */
     .site-logo { height: 40px; }
     .brand-logos {padding: 5px 0 !important; gap: 7px !important;}
     .brand-logos img {height: 16px !important; width: auto; margin: 5px;}
